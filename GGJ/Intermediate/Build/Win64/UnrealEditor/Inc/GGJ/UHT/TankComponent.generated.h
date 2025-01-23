@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GGJ_TankComponent_generated_h
 
-#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHideTrajectory); \
 	DECLARE_FUNCTION(execShowTrajectory); \
 	DECLARE_FUNCTION(execFireMortar); \
 	DECLARE_FUNCTION(execFire);
 
 
-#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTankComponent(); \
 	friend struct Z_Construct_UClass_UTankComponent_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UTankComponent)
 
 
-#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	UTankComponent(UTankComponent&&); \
@@ -42,13 +42,13 @@ public: \
 	NO_API virtual ~UTankComponent();
 
 
-#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_11_PROLOG
-#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_GENERATED_BODY \
+#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_11_PROLOG
+#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_INCLASS_NO_PURE_DECLS \
-	FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_ENHANCED_CONSTRUCTORS \
+	FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_INCLASS_NO_PURE_DECLS \
+	FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,7 +56,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> GGJ_API UClass* StaticClass<class UTankComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h
+#define CURRENT_FILE_ID FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

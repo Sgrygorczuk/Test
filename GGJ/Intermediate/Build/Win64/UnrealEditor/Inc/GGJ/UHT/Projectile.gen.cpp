@@ -139,14 +139,14 @@ AProjectile::~AProjectile() {}
 // End Class AProjectile
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_Projectile_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_Projectile_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AProjectile, AProjectile::StaticClass, TEXT("AProjectile"), &Z_Registration_Info_UClass_AProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectile), 3588848711U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_Projectile_h_2803070470(TEXT("/Script/GGJ"),
-	Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_Projectile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_Projectile_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_Projectile_h_2803070470(TEXT("/Script/GGJ"),
+	Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_Projectile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_Projectile_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset",
+				"C:/Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/TrajectoryVisual.uasset",
+				"C:/Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Levels/Test_Level.umap",
 				"C:/Users/lucap/source/repos/GGJ_2025/GGJ/Content/Character/BP_AmbulancePawn.uasset"
 			]
 		}
