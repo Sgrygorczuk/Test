@@ -8,30 +8,20 @@
 #include "NiagaraComponent.h"
 #include "TankComponent.generated.h"
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+
+UCLASS(Blueprintable, BlueprintType, ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class GGJ_API UTankComponent : public UCharacterComponent
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
-	UTankComponent();
+public:
+    // Sets default values for this component's properties
+    UTankComponent();
 
 public:
 
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-    //cd
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Firing")
-    float FireCooldown;
-
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Mortar")
-    float FireLaunchSpeed;
-
-	// Damage value for the normal shot
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Firing")
-	float AttackDamage;
+    // Called when the game starts
+    virtual void BeginPlay() override;
 
     //cd
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Firing")
@@ -44,42 +34,32 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Mortar")
     float GravityOnMortar;
 
+    //Firing point reference
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Mortar")
+    FString MortarFirePointNameRef;
+
     //Projectile class
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Combat")
-    TSubclassOf<class AProjectile> ProjectileClass;
+    TSubclassOf<class AProjectile> MortarProjectileClass;
 
-    //Firing point reference
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Firing")
-    FString FiringPointNameRef;
-
-    //Firing point reference
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Tank|Firing")
-    FString FiringMortarPointNameRef;
 
 private:
-	//Trajectory Visualization
+    //Trajectory Visualization
     TObjectPtr<class USplineComponent> MortarTrajectory;
     TObjectPtr<class UNiagaraComponent> TrajectoryVisual;
 
-    //Trajectory Visualization
-    TObjectPtr<class UArrowComponent> FiringPoint;
-    TObjectPtr<class UArrowComponent> FiringMortarPoint;
+    //Reference
+    TObjectPtr<class UArrowComponent> MortarFirePoint;
 
     //Timer handles
-    FTimerHandle FireTimerHandle;
     FTimerHandle MortarCooldownHandle;
 
     //Booolean to control firing and cooldown
-    bool CanFire;
-    bool CanUseMortar;
+    bool bCanUseMortar;
 
-	bool IsShowingTrajectory;
+    bool IsShowingTrajectory;
 
 public:
-    // Functions to shoot and use mortar
-    UFUNCTION(BlueprintCallable, Category = "Tank|Combat")
-    void Fire();
-
     // Function to fire a mortar
     UFUNCTION(BlueprintCallable, Category = "Tank|Firing")
     void FireMortar();
@@ -91,14 +71,12 @@ public:
     UFUNCTION(BlueprintCallable, Category = "Tank|Trajectory")
     void HideTrajectory();
 
-	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+    virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
 
     // Helper function for AoE damage
     void ApplyAoEDamage(FVector TargetLocation);
 
-    // Reset functions for firing and cooldown
-    void ResetFire();
     void ResetMortar();
 };

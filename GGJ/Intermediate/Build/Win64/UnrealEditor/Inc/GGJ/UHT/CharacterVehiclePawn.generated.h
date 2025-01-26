@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GGJ_CharacterVehiclePawn_generated_h
 
-#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACharacterVehiclePawn(); \
 	friend struct Z_Construct_UClass_ACharacterVehiclePawn_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(ACharacterVehiclePawn)
 
 
-#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACharacterVehiclePawn(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~ACharacterVehiclePawn();
 
 
-#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_14_PROLOG
-#define FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_GENERATED_BODY \
+#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_14_PROLOG
+#define FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,7 +50,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> GGJ_API UClass* StaticClass<class ACharacterVehiclePawn>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h
+#define CURRENT_FILE_ID FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterVehiclePawn_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

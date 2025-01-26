@@ -18,42 +18,6 @@ GGJ_API UClass* Z_Construct_UClass_UTankComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_GGJ();
 // End Cross Module References
 
-// Begin Class UTankComponent Function Fire
-struct Z_Construct_UFunction_UTankComponent_Fire_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Tank|Combat" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// Functions to shoot and use mortar\n" },
-#endif
-		{ "ModuleRelativePath", "Public/TankComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Functions to shoot and use mortar" },
-#endif
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UTankComponent_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UTankComponent, nullptr, "Fire", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UTankComponent_Fire_Statics::Function_MetaDataParams), Z_Construct_UFunction_UTankComponent_Fire_Statics::Function_MetaDataParams) };
-UFunction* Z_Construct_UFunction_UTankComponent_Fire()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UTankComponent_Fire_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-DEFINE_FUNCTION(UTankComponent::execFire)
-{
-	P_FINISH;
-	P_NATIVE_BEGIN;
-	P_THIS->Fire();
-	P_NATIVE_END;
-}
-// End Class UTankComponent Function Fire
-
 // Begin Class UTankComponent Function FireMortar
 struct Z_Construct_UFunction_UTankComponent_FireMortar_Statics
 {
@@ -161,7 +125,6 @@ void UTankComponent::StaticRegisterNativesUTankComponent()
 {
 	UClass* Class = UTankComponent::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
-		{ "Fire", &UTankComponent::execFire },
 		{ "FireMortar", &UTankComponent::execFireMortar },
 		{ "HideTrajectory", &UTankComponent::execHideTrajectory },
 		{ "ShowTrajectory", &UTankComponent::execShowTrajectory },
@@ -178,33 +141,11 @@ struct Z_Construct_UClass_UTankComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
+		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Custom" },
 		{ "IncludePath", "TankComponent.h" },
+		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/TankComponent.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FireCooldown_MetaData[] = {
-		{ "Category", "Tank|Firing" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//cd\n" },
-#endif
-		{ "ModuleRelativePath", "Public/TankComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "cd" },
-#endif
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FireLaunchSpeed_MetaData[] = {
-		{ "Category", "Tank|Mortar" },
-		{ "ModuleRelativePath", "Public/TankComponent.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackDamage_MetaData[] = {
-		{ "Category", "Tank|Firing" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// Damage value for the normal shot\n" },
-#endif
-		{ "ModuleRelativePath", "Public/TankComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Damage value for the normal shot" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MortarCooldown_MetaData[] = {
 		{ "Category", "Tank|Firing" },
@@ -230,7 +171,17 @@ struct Z_Construct_UClass_UTankComponent_Statics
 		{ "Category", "Tank|Mortar" },
 		{ "ModuleRelativePath", "Public/TankComponent.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MortarFirePointNameRef_MetaData[] = {
+		{ "Category", "Tank|Mortar" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Firing point reference\n" },
+#endif
+		{ "ModuleRelativePath", "Public/TankComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Firing point reference" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MortarProjectileClass_MetaData[] = {
 		{ "Category", "Tank|Combat" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "//Projectile class\n" },
@@ -240,40 +191,15 @@ struct Z_Construct_UClass_UTankComponent_Statics
 		{ "ToolTip", "Projectile class" },
 #endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FiringPointNameRef_MetaData[] = {
-		{ "Category", "Tank|Firing" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//Firing point reference\n" },
-#endif
-		{ "ModuleRelativePath", "Public/TankComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Firing point reference" },
-#endif
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FiringMortarPointNameRef_MetaData[] = {
-		{ "Category", "Tank|Firing" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//Firing point reference\n" },
-#endif
-		{ "ModuleRelativePath", "Public/TankComponent.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Firing point reference" },
-#endif
-	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_FireCooldown;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_FireLaunchSpeed;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_AttackDamage;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MortarCooldown;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MortarLaunchSpeed;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_GravityOnMortar;
-	static const UECodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
-	static const UECodeGen_Private::FStrPropertyParams NewProp_FiringPointNameRef;
-	static const UECodeGen_Private::FStrPropertyParams NewProp_FiringMortarPointNameRef;
+	static const UECodeGen_Private::FStrPropertyParams NewProp_MortarFirePointNameRef;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_MortarProjectileClass;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UTankComponent_Fire, "Fire" }, // 2817494831
 		{ &Z_Construct_UFunction_UTankComponent_FireMortar, "FireMortar" }, // 2607824391
 		{ &Z_Construct_UFunction_UTankComponent_HideTrajectory, "HideTrajectory" }, // 3823052894
 		{ &Z_Construct_UFunction_UTankComponent_ShowTrajectory, "ShowTrajectory" }, // 3553518782
@@ -284,25 +210,17 @@ struct Z_Construct_UClass_UTankComponent_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_FireCooldown = { "FireCooldown", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, FireCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FireCooldown_MetaData), NewProp_FireCooldown_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_FireLaunchSpeed = { "FireLaunchSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, FireLaunchSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FireLaunchSpeed_MetaData), NewProp_FireLaunchSpeed_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_AttackDamage = { "AttackDamage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, AttackDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackDamage_MetaData), NewProp_AttackDamage_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_MortarCooldown = { "MortarCooldown", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, MortarCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MortarCooldown_MetaData), NewProp_MortarCooldown_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_MortarLaunchSpeed = { "MortarLaunchSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, MortarLaunchSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MortarLaunchSpeed_MetaData), NewProp_MortarLaunchSpeed_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_GravityOnMortar = { "GravityOnMortar", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, GravityOnMortar), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GravityOnMortar_MetaData), NewProp_GravityOnMortar_MetaData) };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, ProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AProjectile_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProjectileClass_MetaData), NewProp_ProjectileClass_MetaData) };
-const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_FiringPointNameRef = { "FiringPointNameRef", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, FiringPointNameRef), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FiringPointNameRef_MetaData), NewProp_FiringPointNameRef_MetaData) };
-const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_FiringMortarPointNameRef = { "FiringMortarPointNameRef", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, FiringMortarPointNameRef), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FiringMortarPointNameRef_MetaData), NewProp_FiringMortarPointNameRef_MetaData) };
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_MortarFirePointNameRef = { "MortarFirePointNameRef", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, MortarFirePointNameRef), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MortarFirePointNameRef_MetaData), NewProp_MortarFirePointNameRef_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UTankComponent_Statics::NewProp_MortarProjectileClass = { "MortarProjectileClass", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTankComponent, MortarProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AProjectile_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MortarProjectileClass_MetaData), NewProp_MortarProjectileClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTankComponent_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_FireCooldown,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_FireLaunchSpeed,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_AttackDamage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_MortarCooldown,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_MortarLaunchSpeed,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_GravityOnMortar,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_ProjectileClass,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_FiringPointNameRef,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_FiringMortarPointNameRef,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_MortarFirePointNameRef,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTankComponent_Statics::NewProp_MortarProjectileClass,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UTankComponent_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UTankComponent_Statics::DependentSingletons[])() = {
@@ -342,14 +260,14 @@ UTankComponent::~UTankComponent() {}
 // End Class UTankComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTankComponent, UTankComponent::StaticClass, TEXT("UTankComponent"), &Z_Registration_Info_UClass_UTankComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTankComponent), 1036828954U) },
+		{ Z_Construct_UClass_UTankComponent, UTankComponent::StaticClass, TEXT("UTankComponent"), &Z_Registration_Info_UClass_UTankComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTankComponent), 2821645346U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_1674437151(TEXT("/Script/GGJ"),
-	Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_572757297(TEXT("/Script/GGJ"),
+	Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_TankComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -10,7 +10,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCharacterComponent() {}
 
 // Begin Cross Module References
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
+GGJ_API UClass* Z_Construct_UClass_AProjectile_NoRegister();
 GGJ_API UClass* Z_Construct_UClass_UCharacterComponent();
 GGJ_API UClass* Z_Construct_UClass_UCharacterComponent_NoRegister();
 GGJ_API UFunction* Z_Construct_UDelegateFunction_GGJ_OnDeath__DelegateSignature();
@@ -42,6 +44,36 @@ void FOnDeath_DelegateWrapper(const FMulticastScriptDelegate& OnDeath)
 	OnDeath.ProcessMulticastDelegate<UObject>(NULL);
 }
 // End Delegate FOnDeath
+
+// Begin Class UCharacterComponent Function Fire
+struct Z_Construct_UFunction_UCharacterComponent_Fire_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "Public/CharacterComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UCharacterComponent_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCharacterComponent, nullptr, "Fire", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UCharacterComponent_Fire_Statics::Function_MetaDataParams), Z_Construct_UFunction_UCharacterComponent_Fire_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UCharacterComponent_Fire()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UCharacterComponent_Fire_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UCharacterComponent::execFire)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->Fire();
+	P_NATIVE_END;
+}
+// End Class UCharacterComponent Function Fire
 
 // Begin Class UCharacterComponent Function Heal
 struct Z_Construct_UFunction_UCharacterComponent_Heal_Statics
@@ -134,6 +166,7 @@ void UCharacterComponent::StaticRegisterNativesUCharacterComponent()
 {
 	UClass* Class = UCharacterComponent::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "Fire", &UCharacterComponent::execFire },
 		{ "Heal", &UCharacterComponent::execHeal },
 		{ "TakeDamage", &UCharacterComponent::execTakeDamage },
 	};
@@ -149,8 +182,10 @@ struct Z_Construct_UClass_UCharacterComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
+		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "Custom" },
 		{ "IncludePath", "CharacterComponent.h" },
+		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/CharacterComponent.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_currentHealth_MetaData[] = {
@@ -164,6 +199,44 @@ struct Z_Construct_UClass_UCharacterComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_isDead_MetaData[] = {
 		{ "Category", "Character Stats" },
 		{ "ModuleRelativePath", "Public/CharacterComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FireCooldown_MetaData[] = {
+		{ "Category", "Firing" },
+		{ "ModuleRelativePath", "Public/CharacterComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FireLaunchSpeed_MetaData[] = {
+		{ "Category", "Firing" },
+		{ "ModuleRelativePath", "Public/CharacterComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackDamage_MetaData[] = {
+		{ "Category", "Firing" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Damage value for the normal shot\n" },
+#endif
+		{ "ModuleRelativePath", "Public/CharacterComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Damage value for the normal shot" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FirePointNameRef_MetaData[] = {
+		{ "Category", "Firing" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Firing point reference\n" },
+#endif
+		{ "ModuleRelativePath", "Public/CharacterComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Firing point reference" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FiringProjectileClass_MetaData[] = {
+		{ "Category", "Firing" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Projectile class\n" },
+#endif
+		{ "ModuleRelativePath", "Public/CharacterComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Projectile class" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnDeath_MetaData[] = {
 		{ "Category", "Character Events" },
@@ -180,10 +253,16 @@ struct Z_Construct_UClass_UCharacterComponent_Statics
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_maxHealth;
 	static void NewProp_isDead_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_isDead;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_FireCooldown;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_FireLaunchSpeed;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AttackDamage;
+	static const UECodeGen_Private::FStrPropertyParams NewProp_FirePointNameRef;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_FiringProjectileClass;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnDeath;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UCharacterComponent_Fire, "Fire" }, // 338607449
 		{ &Z_Construct_UFunction_UCharacterComponent_Heal, "Heal" }, // 3877975917
 		{ &Z_Construct_UFunction_UCharacterComponent_TakeDamage, "TakeDamage" }, // 4237745255
 	};
@@ -200,11 +279,21 @@ void Z_Construct_UClass_UCharacterComponent_Statics::NewProp_isDead_SetBit(void*
 	((UCharacterComponent*)Obj)->isDead = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCharacterComponent_Statics::NewProp_isDead = { "isDead", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UCharacterComponent), &Z_Construct_UClass_UCharacterComponent_Statics::NewProp_isDead_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_isDead_MetaData), NewProp_isDead_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCharacterComponent_Statics::NewProp_FireCooldown = { "FireCooldown", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterComponent, FireCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FireCooldown_MetaData), NewProp_FireCooldown_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCharacterComponent_Statics::NewProp_FireLaunchSpeed = { "FireLaunchSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterComponent, FireLaunchSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FireLaunchSpeed_MetaData), NewProp_FireLaunchSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UCharacterComponent_Statics::NewProp_AttackDamage = { "AttackDamage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterComponent, AttackDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackDamage_MetaData), NewProp_AttackDamage_MetaData) };
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UCharacterComponent_Statics::NewProp_FirePointNameRef = { "FirePointNameRef", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterComponent, FirePointNameRef), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FirePointNameRef_MetaData), NewProp_FirePointNameRef_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UCharacterComponent_Statics::NewProp_FiringProjectileClass = { "FiringProjectileClass", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterComponent, FiringProjectileClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AProjectile_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FiringProjectileClass_MetaData), NewProp_FiringProjectileClass_MetaData) };
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UCharacterComponent_Statics::NewProp_OnDeath = { "OnDeath", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterComponent, OnDeath), Z_Construct_UDelegateFunction_GGJ_OnDeath__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDeath_MetaData), NewProp_OnDeath_MetaData) }; // 1803430627
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCharacterComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_currentHealth,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_maxHealth,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_isDead,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_FireCooldown,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_FireLaunchSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_AttackDamage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_FirePointNameRef,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_FiringProjectileClass,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterComponent_Statics::NewProp_OnDeath,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UCharacterComponent_Statics::PropPointers) < 2048);
@@ -245,14 +334,14 @@ UCharacterComponent::~UCharacterComponent() {}
 // End Class UCharacterComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterComponent, UCharacterComponent::StaticClass, TEXT("UCharacterComponent"), &Z_Registration_Info_UClass_UCharacterComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterComponent), 1352759213U) },
+		{ Z_Construct_UClass_UCharacterComponent, UCharacterComponent::StaticClass, TEXT("UCharacterComponent"), &Z_Registration_Info_UClass_UCharacterComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterComponent), 4038816105U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterComponent_h_2470734388(TEXT("/Script/GGJ"),
-	Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sgryg_Documents_GitHub_GGJ_2025_GGJ_Source_GGJ_Public_CharacterComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterComponent_h_4245833289(TEXT("/Script/GGJ"),
+	Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_lucap_source_repos_GGJ_2025_GGJ_Source_GGJ_Public_CharacterComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

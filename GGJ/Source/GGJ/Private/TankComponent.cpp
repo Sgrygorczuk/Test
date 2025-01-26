@@ -12,18 +12,19 @@
 // Constructor
 UTankComponent::UTankComponent()
 {
-	PrimaryComponentTick.bCanEverTick = true;
+    PrimaryComponentTick.bCanEverTick = true;
     PrimaryComponentTick.SetTickFunctionEnable(true);
 
     FireCooldown = 2.0f;        // Normal shot every 2 seconds
-	AttackDamage = 10.0f;   // Damage for normal shot
+    AttackDamage = 10.0f;   // Damage for normal shot
     MortarCooldown = 15.0f;  // Mortar available every 5 seconds
     //MortarDamage = 50.0f;   // AoE damage for mortar
     //MortarRadius = 300.0f;  // Radius for AoE
     MortarLaunchSpeed = 10000.0f; // Initial speed of the mortar
 
-    CanFire = true;
-    CanUseMortar = true;
+    MortarFirePointNameRef = "MortarFirePoint";
+
+    bCanUseMortar = true;
 
     //ifDebuf
     IsShowingTrajectory = true;
@@ -35,59 +36,24 @@ void UTankComponent::BeginPlay()
     Super::BeginPlay();
 
     //ATTENTION CHECK NAMES IN INSPECTOR
-    if (FiringMortarPointNameRef.IsEmpty())
+    if (MortarFirePointNameRef.IsEmpty())
     {
         UE_LOG(LogTemp, Warning, TEXT("FiringMortarPoint is not assigned in %s."), *GetOwner()->GetName());
     }
-    else{
-        FiringMortarPoint = Cast<UArrowComponent>(GetOwner()->GetDefaultSubobjectByName(FName(*FiringMortarPointNameRef)));
+    else {
+        MortarFirePoint = Cast<UArrowComponent>(GetOwner()->GetDefaultSubobjectByName(FName(*MortarFirePointNameRef)));
 
-		MortarTrajectory = GetOwner()->FindComponentByClass<USplineComponent>();
-		TrajectoryVisual = MortarTrajectory->GetOwner()->FindComponentByClass<UNiagaraComponent>();
+        MortarTrajectory = GetOwner()->FindComponentByClass<USplineComponent>();
+        TrajectoryVisual = MortarTrajectory->GetOwner()->FindComponentByClass<UNiagaraComponent>();
 
         MortarTrajectory->SetHiddenInGame(true, true);
     }
 
-    // Ensure the firing point is valid
-	if (FiringPointNameRef.IsEmpty())
-	{
-		UE_LOG(LogTemp, Warning, TEXT("FiringPoint is not assigned in %s."), *GetOwner()->GetName());
-	}
-    else {
-        FiringPoint = Cast<UArrowComponent>(GetOwner()->GetDefaultSubobjectByName(FName(*FiringPointNameRef)));
+    // Ensure the projectile class is valid
+    if (!MortarProjectileClass)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("ProjectileClass is not assigned in %s."), *GetOwner()->GetName());
     }
-
-	// Ensure the projectile class is valid
-	if (!ProjectileClass)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("ProjectileClass is not assigned in %s."), *GetOwner()->GetName());
-	}
-
-}
-
-/// <summary>
-/// Normal Fire
-/// </summary>
-void UTankComponent::Fire()
-{
-    if (!CanFire)
-        return;
-
-    // Spawn the projectile
-    FVector spawnLocation = FiringPoint->GetComponentLocation();
-    FRotator spawnRotation = FiringPoint->GetComponentRotation();
-
-    AProjectile* Projectile = GetWorld()->SpawnActor<AProjectile>(ProjectileClass, spawnLocation, spawnRotation);
-    
-    //set Projectile speed and remove gravity
-    auto movComp = Cast<UProjectileMovementComponent>(Projectile->GetComponentByClass(UProjectileMovementComponent::StaticClass()));
-	movComp->ProjectileGravityScale = 0.0f;
-
-    //normal of up plane
-    movComp->SetPlaneConstraintNormal(FVector(0, 0, 1));
-
-    CanFire = false;
-    GetWorld()->GetTimerManager().SetTimer(FireTimerHandle, this, &UTankComponent::ResetFire, FireCooldown, false);
 
 }
 
@@ -97,48 +63,48 @@ void UTankComponent::Fire()
 /// <param name="TargetLocation"></param>
 void UTankComponent::FireMortar()
 {
-    if (!CanUseMortar)
+    if (!bCanUseMortar)
         return;
 
     // Spawn the projectile
-    FVector spawnLocation = FiringMortarPoint->GetComponentLocation();
-	FRotator spawnRotation = FiringMortarPoint->GetComponentRotation();
+    FVector spawnLocation = MortarFirePoint->GetComponentLocation();
+    FRotator spawnRotation = MortarFirePoint->GetComponentRotation();
 
-    AProjectile* Projectile = GetWorld()->SpawnActor<AProjectile>(ProjectileClass, spawnLocation, spawnRotation);
+    AProjectile* Projectile = GetWorld()->SpawnActor<AProjectile>(MortarProjectileClass, spawnLocation, spawnRotation);
 
     //set Projectile speed and remove gravity
     auto movComp = Cast<UProjectileMovementComponent>(Projectile->GetComponentByClass(UProjectileMovementComponent::StaticClass()));
-	movComp->ProjectileGravityScale = GravityOnMortar;
+    movComp->ProjectileGravityScale = GravityOnMortar;
 
-	movComp->InitialSpeed = MortarLaunchSpeed;
-	movComp->MaxSpeed = MortarLaunchSpeed;
+    movComp->InitialSpeed = MortarLaunchSpeed;
+    movComp->MaxSpeed = MortarLaunchSpeed;
 
-    CanUseMortar = false;
+    bCanUseMortar = false;
     GetWorld()->GetTimerManager().SetTimer(MortarCooldownHandle, this, &UTankComponent::ResetMortar, MortarCooldown, false);
 }
 
 void UTankComponent::ShowTrajectory()
 {
-	MortarTrajectory->SetHiddenInGame(false, true);
-	IsShowingTrajectory = true;
+    MortarTrajectory->SetHiddenInGame(false, true);
+    IsShowingTrajectory = true;
 }
 
 void UTankComponent::HideTrajectory()
 {
     MortarTrajectory->SetHiddenInGame(true, true);
-	IsShowingTrajectory = false;
+    IsShowingTrajectory = false;
 }
 
 void UTankComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+    Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-    if (IsShowingTrajectory) 
+    if (IsShowingTrajectory)
     {
         FPredictProjectilePathParams Params;
 
-        Params.StartLocation = FiringMortarPoint->GetComponentLocation();
-        Params.LaunchVelocity = FiringMortarPoint->GetForwardVector() * MortarLaunchSpeed;
+        Params.StartLocation = MortarFirePoint->GetComponentLocation();
+        Params.LaunchVelocity = MortarFirePoint->GetForwardVector() * MortarLaunchSpeed;
         Params.ProjectileRadius = 10000.f;
 
         FPredictProjectilePathResult PathResult;
@@ -146,11 +112,11 @@ void UTankComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, FA
         // Predict the projectile path
         bool bHit = UGameplayStatics::PredictProjectilePath(GetWorld(), Params, PathResult);
 
-		TArray<FVector> SplinePoints;
+        TArray<FVector> SplinePoints;
 
         for (auto point : PathResult.PathData)
         {
-			SplinePoints.Add(point.Location);
+            SplinePoints.Add(point.Location);
         }
 
         MortarTrajectory->SetSplinePoints(SplinePoints, ESplineCoordinateSpace::World);
@@ -179,14 +145,9 @@ void UTankComponent::ApplyAoEDamage(FVector TargetLocation)
     // Optional: Add a visual effect or explosion effect here
 }
 
-void UTankComponent::ResetFire()
-{
-    CanFire = true;
-}
-
 void UTankComponent::ResetMortar()
 {
-    CanUseMortar = true;
+    bCanUseMortar = true;
 }
 
 

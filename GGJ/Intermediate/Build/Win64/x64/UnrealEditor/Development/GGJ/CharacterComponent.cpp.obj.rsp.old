@@ -1,12 +1,12 @@
-"C:\Users\lucap\source\repos\GGJ_2025\GGJ\Source\GGJ\Private\CharacterComponent.cpp"
-/FI"C:\Users\lucap\source\repos\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\GGJEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h"
-/FI"C:\Users\lucap\source\repos\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\Definitions.GGJ.h"
-/Yu"C:\Users\lucap\source\repos\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\GGJEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h"
-/Fp"C:\Users\lucap\source\repos\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\GGJEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h.pch"
-/Fo"C:\Users\lucap\source\repos\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\CharacterComponent.cpp.obj"
-/experimental:log "C:\Users\lucap\source\repos\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\CharacterComponent.cpp.sarif"
-/sourceDependencies "C:\Users\lucap\source\repos\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\CharacterComponent.cpp.dep.json"
-@"C:\Users\lucap\source\repos\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\GGJ.Shared.rsp"
+"C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Source\GGJ\Private\CharacterComponent.cpp"
+/FI"C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\GGJEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h"
+/FI"C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\Definitions.GGJ.h"
+/Yu"C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\GGJEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h"
+/Fp"C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\GGJEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h.pch"
+/Fo"C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\CharacterComponent.cpp.obj"
+/experimental:log "C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\CharacterComponent.cpp.sarif"
+/sourceDependencies "C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\CharacterComponent.cpp.dep.json"
+@"C:\Users\sgryg\Documents\GitHub\GGJ_2025\GGJ\Intermediate\Build\Win64\x64\UnrealEditor\Development\GGJ\GGJ.Shared.rsp"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo
