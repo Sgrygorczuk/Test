@@ -4179,3 +4179,126 @@ Scale3D: 1.000000 1.000000 1.000000
 [2025.01.26-18.38.01:776][749]AssetCheck: /Game/UI/Widgets/Game_Canvas Validating asset
 [2025.01.26-18.38.01:776][749]AssetCheck: /Game/Vehicles/tankv1 Validating asset
 [2025.01.26-18.38.01:776][749]AssetCheck: /Game/Environment/M_blur Validating asset
+[2025.01.26-18.38.43:008][973]LogEditorTransaction: Undo Remove Components
+[2025.01.26-18.38.52:390][119]LogAutomationController: Ignoring very large delta of 3.70 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2025.01.26-18.39.04:072][512]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1311.664307
+[2025.01.26-18.39.04:161][517]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.01.26-18.39.04:161][517]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1311.734863, Update Interval: 354.252136
+[2025.01.26-18.39.12:287][946]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2025.01.26-18.39.13:940][946]LogSlate: Window 'Save Content' being destroyed
+[2025.01.26-18.39.13:957][946]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.26-18.39.14:162][946]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Character/BP_TankPawn] ([2] browsable assets)...
+[2025.01.26-18.39.14:182][946]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Character/BP_TankPawn.BP_TankPawn]
+[2025.01.26-18.39.14:182][946]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/BP_TankPawn]
+[2025.01.26-18.39.14:182][946]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/BP_TankPawn" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset" SILENT=true
+[2025.01.26-18.39.14:195][946]LogSavePackage: Moving output files for package: /Game/Character/BP_TankPawn
+[2025.01.26-18.39.14:196][946]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/BP_TankPawn3A97667B4BFE076B54CAD2B77909F4A0.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset'
+[2025.01.26-18.39.14:416][946]LogFileHelpers: InternalPromptForCheckoutAndSave took 459.229 ms (total: 1.20 sec)
+[2025.01.26-18.39.14:416][946]LogStreaming: Display: FlushAsyncLoading(1695): 1 QueuedPackages, 0 AsyncPackages
+[2025.01.26-18.39.14:476][946]LogChaosDD: Creating Chaos Debug Draw Scene for world Test_Level
+[2025.01.26-18.39.14:478][946]LogWorldPartition: ULevel::OnLevelLoaded(Test_Level)(bIsOwningWorldGameWorld=0, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=1, InitializeForGame=0)
+[2025.01.26-18.39.14:478][946]LogWorldPartition: Display: WorldPartition initialize started...
+[2025.01.26-18.39.14:478][946]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UI/Levels/Test_Level.Test_Level, World Type = Inactive, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 1, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2025.01.26-18.39.14:551][946]LogWorldPartition: Display: WorldPartition initialize took 72.345 ms (total: 2.78 sec)
+[2025.01.26-18.39.14:559][946]LogAssetEditorSubsystem: Opening Asset editor for World /Game/UI/Levels/Test_Level.Test_Level
+[2025.01.26-18.39.14:560][946]Cmd: MAP LOAD FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Levels/Test_Level.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.01.26-18.39.14:598][946]LogWorld: UWorld::CleanupWorld for Character_Select_Scene, bSessionEnded=true, bCleanupResources=true
+[2025.01.26-18.39.14:599][946]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.26-18.39.14:649][946]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.26-18.39.14:655][946]LogUObjectHash: Compacting FUObjectHashTables data took   2.89ms
+[2025.01.26-18.39.14:666][946]LogWorld: UWorld::CleanupWorld for Test_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.26-18.39.14:669][946]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.26-18.39.14:669][946]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UI/Levels/Test_Level.Test_Level
+[2025.01.26-18.39.14:728][946]LogUObjectHash: Compacting FUObjectHashTables data took   2.89ms
+[2025.01.26-18.39.14:782][946]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2025.01.26-18.39.14:850][946]LogAudio: Display: Audio Device (ID: 1) registered with world 'Test_Level'.
+[2025.01.26-18.39.14:850][946]LogChaosDD: Creating Chaos Debug Draw Scene for world Test_Level
+[2025.01.26-18.39.14:855][946]LogWorldPartition: ULevel::OnLevelLoaded(Test_Level)(bIsOwningWorldGameWorld=0, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=1, InitializeForGame=0)
+[2025.01.26-18.39.14:855][946]LogWorldPartition: Display: WorldPartition initialize started...
+[2025.01.26-18.39.14:855][946]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UI/Levels/Test_Level.Test_Level, World Type = Editor, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 1, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2025.01.26-18.39.14:932][946]LogWorldPartition: Display: WorldPartition initialize took 77.803 ms (total: 2.86 sec)
+[2025.01.26-18.39.14:982][946]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.26-18.39.15:033][946]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2025.01.26-18.39.15:059][946]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.26-18.39.15:062][946]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 3.185ms to complete.
+[2025.01.26-18.39.15:327][946]LogContentValidation: Display: Starting to validate 1 assets
+[2025.01.26-18.39.15:327][946]LogContentValidation: Enabled validators:
+[2025.01.26-18.39.15:327][946]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.01.26-18.39.15:327][946]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.01.26-18.39.15:327][946]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.01.26-18.39.15:327][946]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.01.26-18.39.15:327][946]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.01.26-18.39.15:327][946]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.01.26-18.39.15:327][946]AssetCheck: /Game/Character/BP_TankPawn Validating asset
+[2025.01.26-18.39.15:392][946]LogAutomationController: Ignoring very large delta of 3.23 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2025.01.26-18.39.37:619][623]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2025.01.26-18.39.37:628][623]LogStreaming: Display: FlushAsyncLoading(1899): 1 QueuedPackages, 0 AsyncPackages
+[2025.01.26-18.39.37:923][623]LogChaosDD: Creating Chaos Debug Draw Scene for world End_Level
+[2025.01.26-18.39.37:926][623]LogAssetEditorSubsystem: Opening Asset editor for World /Game/UI/Levels/End_Level.End_Level
+[2025.01.26-18.39.37:926][623]Cmd: MAP LOAD FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Levels/End_Level.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.01.26-18.39.38:018][623]LogWorld: UWorld::CleanupWorld for Test_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.26-18.39.38:018][623]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.26-18.39.38:018][623]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UI/Levels/Test_Level.Test_Level
+[2025.01.26-18.39.38:078][623]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.26-18.39.38:088][623]LogUObjectHash: Compacting FUObjectHashTables data took   3.23ms
+[2025.01.26-18.39.38:094][623]LogWorld: UWorld::CleanupWorld for End_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.26-18.39.38:094][623]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.26-18.39.38:156][623]LogUObjectHash: Compacting FUObjectHashTables data took   5.31ms
+[2025.01.26-18.39.38:245][623]LogUObjectHash: Compacting FUObjectHashTables data took   5.40ms
+[2025.01.26-18.39.38:325][623]LogAudio: Display: Audio Device (ID: 1) registered with world 'End_Level'.
+[2025.01.26-18.39.38:325][623]LogChaosDD: Creating Chaos Debug Draw Scene for world End_Level
+[2025.01.26-18.39.38:413][623]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.26-18.39.38:469][623]LogUObjectHash: Compacting FUObjectHashTables data took   4.84ms
+[2025.01.26-18.39.38:504][623]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.26-18.39.38:504][623]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.121ms to complete.
+[2025.01.26-18.39.46:658][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   2.65ms
+[2025.01.26-18.39.46:668][ 78]LogStreaming: Display: FlushAsyncLoading(1901): 1 QueuedPackages, 0 AsyncPackages
+[2025.01.26-18.39.46:938][ 78]LogChaosDD: Creating Chaos Debug Draw Scene for world Main_Menu_Level
+[2025.01.26-18.39.46:940][ 78]LogAssetEditorSubsystem: Opening Asset editor for World /Game/UI/Levels/Main_Menu_Level.Main_Menu_Level
+[2025.01.26-18.39.46:941][ 78]Cmd: MAP LOAD FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Levels/Main_Menu_Level.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.01.26-18.39.46:995][ 78]LogWorld: UWorld::CleanupWorld for End_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.26-18.39.46:995][ 78]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.26-18.39.47:029][ 78]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.26-18.39.47:033][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
+[2025.01.26-18.39.47:035][ 78]LogWorld: UWorld::CleanupWorld for Main_Menu_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.26-18.39.47:035][ 78]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.26-18.39.47:084][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   4.64ms
+[2025.01.26-18.39.47:159][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   5.09ms
+[2025.01.26-18.39.47:251][ 78]LogAudio: Display: Audio Device (ID: 1) registered with world 'Main_Menu_Level'.
+[2025.01.26-18.39.47:251][ 78]LogChaosDD: Creating Chaos Debug Draw Scene for world Main_Menu_Level
+[2025.01.26-18.39.47:315][ 78]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.26-18.39.47:365][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   3.59ms
+[2025.01.26-18.39.47:399][ 78]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.26-18.39.47:400][ 78]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.112ms to complete.
+[2025.01.26-18.39.50:585][197]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Widgets/End_Canvas.End_Canvas
+[2025.01.26-18.39.50:587][197]LogChaosDD: Creating Chaos Debug Draw Scene for world World_13
+[2025.01.26-18.39.50:629][197]LogChaosDD: Creating Chaos Debug Draw Scene for world World_14
+[2025.01.26-18.39.53:478][197]LogAutomationController: Ignoring very large delta of 2.90 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2025.01.26-18.40.01:279][318]LogAutomationController: Ignoring very large delta of 3.00 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2025.01.26-18.40.31:285][356]LogSlate: Window 'Color Picker' being destroyed
+[2025.01.26-18.41.19:420][313]LogSlate: Window 'Color Picker' being destroyed
+[2025.01.26-18.42.36:359][678]Cmd: TRANSACTION UNDO
+[2025.01.26-18.42.36:359][678]LogEditorTransaction: Undo Rename Widget
+[2025.01.26-18.42.37:119][693]Cmd: TRANSACTION UNDO
+[2025.01.26-18.42.37:119][693]LogEditorTransaction: Undo Edit Text
+[2025.01.26-18.42.38:921][785]Cmd: TRANSACTION UNDO
+[2025.01.26-18.42.38:921][785]LogEditorTransaction: Undo Edit Text
+[2025.01.26-18.44.09:693][470]LogUObjectHash: Compacting FUObjectHashTables data took   3.04ms
+[2025.01.26-18.44.29:496][350]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
+[2025.01.26-18.44.29:511][350]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.26-18.44.29:665][350]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/UI/Widgets/End_Canvas] ([2] browsable assets)...
+[2025.01.26-18.44.29:670][350]OBJ SavePackage:     Rendered thumbnail for [WidgetBlueprint /Game/UI/Widgets/End_Canvas.End_Canvas]
+[2025.01.26-18.44.29:670][350]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/Widgets/End_Canvas]
+[2025.01.26-18.44.29:670][350]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/Widgets/End_Canvas" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Widgets/End_Canvas.uasset" SILENT=true
+[2025.01.26-18.44.29:678][350]LogSavePackage: Moving output files for package: /Game/UI/Widgets/End_Canvas
+[2025.01.26-18.44.29:679][350]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/End_Canvas874642A042A13C5BD4196BBBAEB0015C.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Widgets/End_Canvas.uasset'
+[2025.01.26-18.44.29:689][350]LogFileHelpers: InternalPromptForCheckoutAndSave took 177.512 ms (total: 1.38 sec)
+[2025.01.26-18.44.29:846][350]LogContentValidation: Display: Starting to validate 1 assets
+[2025.01.26-18.44.29:846][350]LogContentValidation: Enabled validators:
+[2025.01.26-18.44.29:846][350]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.01.26-18.44.29:846][350]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.01.26-18.44.29:846][350]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.01.26-18.44.29:846][350]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.01.26-18.44.29:846][350]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.01.26-18.44.29:846][350]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.01.26-18.44.29:847][350]AssetCheck: /Game/UI/Widgets/End_Canvas Validating asset
