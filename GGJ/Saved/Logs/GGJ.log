@@ -4139,3 +4139,43 @@ Scale3D: 1.000000 1.000000 1.000000
 [2025.01.26-18.36.51:420][188]LogUObjectHash: Compacting FUObjectHashTables data took   4.22ms
 [2025.01.26-18.36.52:376][189]LogPlayLevel: Display: Destroying online subsystem :Context_23
 [2025.01.26-18.37.08:547][487]LogUObjectHash: Compacting FUObjectHashTables data took   4.93ms
+[2025.01.26-18.37.58:012][573]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2025.01.26-18.37.58:012][573]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.26-18.37.58:083][573]LogUObjectHash: Compacting FUObjectHashTables data took   2.84ms
+[2025.01.26-18.38.01:095][749]LogUObjectHash: Compacting FUObjectHashTables data took   5.06ms
+[2025.01.26-18.38.01:108][749]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.26-18.38.01:376][749]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Character/BP_TankPawn] ([2] browsable assets)...
+[2025.01.26-18.38.01:407][749]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Character/BP_TankPawn.BP_TankPawn]
+[2025.01.26-18.38.01:407][749]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/BP_TankPawn]
+[2025.01.26-18.38.01:407][749]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/BP_TankPawn" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset" SILENT=true
+[2025.01.26-18.38.01:426][749]LogSavePackage: Moving output files for package: /Game/Character/BP_TankPawn
+[2025.01.26-18.38.01:426][749]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/BP_TankPawnA9273CDB4310C18C3B04E89CF1DF7754.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset'
+[2025.01.26-18.38.01:428][749]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/UI/Widgets/Game_Canvas] ([2] browsable assets)...
+[2025.01.26-18.38.01:428][749]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/Widgets/Game_Canvas]
+[2025.01.26-18.38.01:428][749]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/Widgets/Game_Canvas" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Widgets/Game_Canvas.uasset" SILENT=true
+[2025.01.26-18.38.01:488][749]LogSavePackage: Moving output files for package: /Game/UI/Widgets/Game_Canvas
+[2025.01.26-18.38.01:489][749]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/Game_Canvas27E5A6FD4B282B8E1A5AEA91C79D1A32.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Widgets/Game_Canvas.uasset'
+[2025.01.26-18.38.01:490][749]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Vehicles/tankv1] ([1] browsable assets)...
+[2025.01.26-18.38.01:497][749]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Vehicles/tankv1.tankv1]
+[2025.01.26-18.38.01:497][749]OBJ SavePackage: Finished generating thumbnails for package [/Game/Vehicles/tankv1]
+[2025.01.26-18.38.01:497][749]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Vehicles/tankv1" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Vehicles/tankv1.uasset" SILENT=true
+[2025.01.26-18.38.01:505][749]LogSavePackage: Moving output files for package: /Game/Vehicles/tankv1
+[2025.01.26-18.38.01:505][749]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/tankv188D6A328421DE52A5CDFD4BB957CE584.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Vehicles/tankv1.uasset'
+[2025.01.26-18.38.01:510][749]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Environment/M_blur] ([1] browsable assets)...
+[2025.01.26-18.38.01:510][749]OBJ SavePackage: Finished generating thumbnails for package [/Game/Environment/M_blur]
+[2025.01.26-18.38.01:510][749]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Environment/M_blur" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Environment/M_blur.uasset" SILENT=true
+[2025.01.26-18.38.01:514][749]LogSavePackage: Moving output files for package: /Game/Environment/M_blur
+[2025.01.26-18.38.01:515][749]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/M_blur220F3D5342299FC812855FAB86373FDF.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Environment/M_blur.uasset'
+[2025.01.26-18.38.01:537][749]LogFileHelpers: InternalPromptForCheckoutAndSave took 431.081 ms (total: 747.599 ms)
+[2025.01.26-18.38.01:775][749]LogContentValidation: Display: Starting to validate 4 assets
+[2025.01.26-18.38.01:775][749]LogContentValidation: Enabled validators:
+[2025.01.26-18.38.01:775][749]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.01.26-18.38.01:775][749]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.01.26-18.38.01:775][749]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.01.26-18.38.01:775][749]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.01.26-18.38.01:775][749]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.01.26-18.38.01:775][749]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.01.26-18.38.01:775][749]AssetCheck: /Game/Character/BP_TankPawn Validating asset
+[2025.01.26-18.38.01:776][749]AssetCheck: /Game/UI/Widgets/Game_Canvas Validating asset
+[2025.01.26-18.38.01:776][749]AssetCheck: /Game/Vehicles/tankv1 Validating asset
+[2025.01.26-18.38.01:776][749]AssetCheck: /Game/Environment/M_blur Validating asset
