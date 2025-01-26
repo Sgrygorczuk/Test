@@ -5613,3 +5613,62 @@ Scale3D: 1.000000 1.000000 1.000000
 [2025.01.26-17.39.09:139][472]LogPlayLevel: Display: Destroying online subsystem :Context_40
 [2025.01.26-17.39.43:646][471]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Character/BP_Projectile.BP_Projectile
 [2025.01.26-17.39.43:646][471]LogChaosDD: Creating Chaos Debug Draw Scene for world World_22
+[2025.01.26-17.40.27:334][331]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.26-17.40.27:427][331]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VehicleTemplate/Blueprints/VehiclePlayerController] ([2] browsable assets)...
+[2025.01.26-17.40.27:427][331]OBJ SavePackage: Finished generating thumbnails for package [/Game/VehicleTemplate/Blueprints/VehiclePlayerController]
+[2025.01.26-17.40.27:432][331]LogSavePackage: Moving output files for package: /Game/VehicleTemplate/Blueprints/VehiclePlayerController
+[2025.01.26-17.40.27:433][331]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/VehiclePlayerController5AADB49E404F023791EF13AEC4448AF4.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/VehicleTemplate/Blueprints/VehiclePlayerController.uasset'
+[2025.01.26-17.40.27:442][331]LogFileHelpers: InternalPromptForCheckoutAndSave took 106.528 ms (total: 4.10 sec)
+[2025.01.26-17.40.27:583][331]LogContentValidation: Display: Starting to validate 1 assets
+[2025.01.26-17.40.27:583][331]LogContentValidation: Enabled validators:
+[2025.01.26-17.40.27:583][331]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.01.26-17.40.27:583][331]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.01.26-17.40.27:583][331]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.01.26-17.40.27:583][331]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.01.26-17.40.27:583][331]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.01.26-17.40.27:583][331]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.01.26-17.40.27:583][331]AssetCheck: /Game/VehicleTemplate/Blueprints/VehiclePlayerController Validating asset
+[2025.01.26-17.40.28:997][403]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.26-17.40.29:165][403]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/VehicleTemplate/Blueprints/VehiclePlayerController] ([2] browsable assets)...
+[2025.01.26-17.40.29:165][403]OBJ SavePackage: Finished generating thumbnails for package [/Game/VehicleTemplate/Blueprints/VehiclePlayerController]
+[2025.01.26-17.40.29:170][403]LogSavePackage: Moving output files for package: /Game/VehicleTemplate/Blueprints/VehiclePlayerController
+[2025.01.26-17.40.29:170][403]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/VehiclePlayerController5D2306AF4559456EBAA48E8CF80F0ABA.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/VehicleTemplate/Blueprints/VehiclePlayerController.uasset'
+[2025.01.26-17.40.29:178][403]LogFileHelpers: InternalPromptForCheckoutAndSave took 181.190 ms (total: 4.28 sec)
+[2025.01.26-17.40.29:304][403]LogContentValidation: Display: Starting to validate 1 assets
+[2025.01.26-17.40.29:304][403]LogContentValidation: Enabled validators:
+[2025.01.26-17.40.29:304][403]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.01.26-17.40.29:304][403]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.01.26-17.40.29:304][403]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.01.26-17.40.29:304][403]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.01.26-17.40.29:304][403]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.01.26-17.40.29:304][403]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.01.26-17.40.29:304][403]AssetCheck: /Game/VehicleTemplate/Blueprints/VehiclePlayerController Validating asset
+[2025.01.26-17.40.30:697][478]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2025.01.26-17.40.30:702][478]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.26-17.40.30:855][478]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2025.01.26-17.40.30:861][478]LogSavePackage: Moving output files for package: /Game/UI/Levels/Character_Select_Scene
+[2025.01.26-17.40.30:862][478]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/Character_Select_Scene407EC3D3472988632AFAA5B29F5A13C2.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Levels/Character_Select_Scene.umap'
+[2025.01.26-17.40.30:873][478]LogFileHelpers: Saving map 'Character_Select_Scene' took 0.062
+[2025.01.26-17.40.30:873][478]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Character/BP_TankPawn] ([2] browsable assets)...
+[2025.01.26-17.40.30:884][478]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Character/BP_TankPawn.BP_TankPawn]
+[2025.01.26-17.40.30:884][478]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/BP_TankPawn]
+[2025.01.26-17.40.30:885][478]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/BP_TankPawn" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset" SILENT=true
+[2025.01.26-17.40.30:892][478]LogSavePackage: Moving output files for package: /Game/Character/BP_TankPawn
+[2025.01.26-17.40.30:893][478]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/BP_TankPawn6EA272C04A96FD37717921A3FB290724.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset'
+[2025.01.26-17.40.30:894][478]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Vehicles/MonsterTruck/BP_MonsterTruck] ([2] browsable assets)...
+[2025.01.26-17.40.30:898][478]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Vehicles/MonsterTruck/BP_MonsterTruck.BP_MonsterTruck]
+[2025.01.26-17.40.30:898][478]OBJ SavePackage: Finished generating thumbnails for package [/Game/Vehicles/MonsterTruck/BP_MonsterTruck]
+[2025.01.26-17.40.30:903][478]LogSavePackage: Moving output files for package: /Game/Vehicles/MonsterTruck/BP_MonsterTruck
+[2025.01.26-17.40.30:904][478]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/BP_MonsterTruck4335513E4A2F46791FFAC491821316F1.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Vehicles/MonsterTruck/BP_MonsterTruck.uasset'
+[2025.01.26-17.40.30:915][478]LogFileHelpers: InternalPromptForCheckoutAndSave took 211.523 ms (total: 4.49 sec)
+[2025.01.26-17.40.31:046][478]LogContentValidation: Display: Starting to validate 3 assets
+[2025.01.26-17.40.31:046][478]LogContentValidation: Enabled validators:
+[2025.01.26-17.40.31:046][478]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.01.26-17.40.31:046][478]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.01.26-17.40.31:046][478]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.01.26-17.40.31:046][478]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.01.26-17.40.31:046][478]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.01.26-17.40.31:046][478]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.01.26-17.40.31:046][478]AssetCheck: /Game/UI/Levels/Character_Select_Scene Validating asset
+[2025.01.26-17.40.31:046][478]AssetCheck: /Game/Character/BP_TankPawn Validating asset
+[2025.01.26-17.40.31:046][478]AssetCheck: /Game/Vehicles/MonsterTruck/BP_MonsterTruck Validating asset
