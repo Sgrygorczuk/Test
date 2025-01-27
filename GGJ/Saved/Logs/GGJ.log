@@ -3176,3 +3176,419 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2025.01.27-01.51.50:597][436]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11
 [2025.01.27-01.51.50:608][436]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
 [2025.01.27-01.51.50:820][437]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2025.01.27-01.52.04:779][547]LogSlate: Window 'Message Log' being destroyed
+[2025.01.27-01.52.04:823][547]LogSlate: Window 'Message Log' being destroyed
+[2025.01.27-01.52.12:873][115]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2025.01.27-01.52.14:025][115]LogSlate: Window 'Save Content' being destroyed
+[2025.01.27-01.52.14:036][115]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.27-01.52.14:185][115]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Character/BP_TankPawn] ([2] browsable assets)...
+[2025.01.27-01.52.14:185][115]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/BP_TankPawn]
+[2025.01.27-01.52.14:185][115]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/BP_TankPawn" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset" SILENT=true
+[2025.01.27-01.52.14:197][115]LogSavePackage: Moving output files for package: /Game/Character/BP_TankPawn
+[2025.01.27-01.52.14:198][115]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/BP_TankPawnA38FE3CE480D3EE1ADD986B89645B0CE.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/Character/BP_TankPawn.uasset'
+[2025.01.27-01.52.14:199][115]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/UI/Levels/Game_Level/F/49/88EYNKK7Z7DWDSPIHLDLUG
+[2025.01.27-01.52.14:201][115]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/88EYNKK7Z7DWDSPIHLDLUG83F14C2F4CF23881B1582D8FBB088A05.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/__ExternalActors__/UI/Levels/Game_Level/F/49/88EYNKK7Z7DWDSPIHLDLUG.uasset'
+[2025.01.27-01.52.14:367][115]LogFileHelpers: InternalPromptForCheckoutAndSave took 330.978 ms
+[2025.01.27-01.52.14:368][115]LogStreaming: Display: FlushAsyncLoading(985): 1 QueuedPackages, 0 AsyncPackages
+[2025.01.27-01.52.14:399][115]LogChaosDD: Creating Chaos Debug Draw Scene for world End_Level
+[2025.01.27-01.52.14:400][115]LogAssetEditorSubsystem: Opening Asset editor for World /Game/UI/Levels/End_Level.End_Level
+[2025.01.27-01.52.14:400][115]Cmd: MAP LOAD FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Levels/End_Level.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.01.27-01.52.14:447][115]LogWorld: UWorld::CleanupWorld for Game_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.52.14:447][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.52.14:447][115]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UI/Levels/Game_Level.Game_Level
+[2025.01.27-01.52.14:487][115]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-01.52.14:493][115]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2025.01.27-01.52.14:497][115]LogWorld: UWorld::CleanupWorld for End_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.52.14:497][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.52.14:527][115]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2025.01.27-01.52.14:550][115]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2025.01.27-01.52.14:573][115]LogAudio: Display: Audio Device (ID: 1) registered with world 'End_Level'.
+[2025.01.27-01.52.14:573][115]LogChaosDD: Creating Chaos Debug Draw Scene for world End_Level
+[2025.01.27-01.52.14:605][115]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-01.52.14:628][115]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2025.01.27-01.52.14:642][115]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-01.52.14:642][115]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.063ms to complete.
+[2025.01.27-01.52.14:855][115]LogContentValidation: Display: Starting to validate 2 assets
+[2025.01.27-01.52.14:855][115]LogContentValidation: Enabled validators:
+[2025.01.27-01.52.14:855][115]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.01.27-01.52.14:855][115]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.01.27-01.52.14:855][115]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.01.27-01.52.14:855][115]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.01.27-01.52.14:855][115]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.01.27-01.52.14:855][115]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.01.27-01.52.14:856][115]AssetCheck: /Game/Character/BP_TankPawn Validating asset
+[2025.01.27-01.52.17:617][314]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2025.01.27-01.52.17:623][314]LogStreaming: Display: FlushAsyncLoading(987): 1 QueuedPackages, 0 AsyncPackages
+[2025.01.27-01.52.17:682][314]LogChaosDD: Creating Chaos Debug Draw Scene for world Game_Level
+[2025.01.27-01.52.17:683][314]LogWorldPartition: ULevel::OnLevelLoaded(Game_Level)(bIsOwningWorldGameWorld=0, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=1, InitializeForGame=0)
+[2025.01.27-01.52.17:683][314]LogWorldPartition: Display: WorldPartition initialize started...
+[2025.01.27-01.52.17:683][314]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UI/Levels/Game_Level.Game_Level, World Type = Inactive, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 1, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2025.01.27-01.52.18:110][314]LogWorldPartition: Display: WorldPartition initialize took 426.548 ms (total: 982.397 ms)
+[2025.01.27-01.52.18:118][314]LogAssetEditorSubsystem: Opening Asset editor for World /Game/UI/Levels/Game_Level.Game_Level
+[2025.01.27-01.52.18:118][314]Cmd: MAP LOAD FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Levels/Game_Level.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.01.27-01.52.18:132][314]LogWorld: UWorld::CleanupWorld for End_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.52.18:132][314]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.52.18:160][314]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-01.52.18:163][314]LogUObjectHash: Compacting FUObjectHashTables data took   1.26ms
+[2025.01.27-01.52.18:165][314]LogWorld: UWorld::CleanupWorld for Game_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.52.18:165][314]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.52.18:165][314]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UI/Levels/Game_Level.Game_Level
+[2025.01.27-01.52.18:195][314]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2025.01.27-01.52.18:222][314]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2025.01.27-01.52.18:252][314]LogAudio: Display: Audio Device (ID: 1) registered with world 'Game_Level'.
+[2025.01.27-01.52.18:252][314]LogChaosDD: Creating Chaos Debug Draw Scene for world Game_Level
+[2025.01.27-01.52.18:254][314]LogWorldPartition: ULevel::OnLevelLoaded(Game_Level)(bIsOwningWorldGameWorld=0, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=1, InitializeForGame=0)
+[2025.01.27-01.52.18:254][314]LogWorldPartition: Display: WorldPartition initialize started...
+[2025.01.27-01.52.18:254][314]LogWorldPartition: UWorldPartition::Initialize : World = /Game/UI/Levels/Game_Level.Game_Level, World Type = Editor, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 1, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2025.01.27-01.52.18:310][314]LogWorldPartition: Display: WorldPartition initialize took 56.531 ms (total: 1.03 sec)
+[2025.01.27-01.52.18:352][314]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-01.52.18:382][314]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2025.01.27-01.52.18:394][314]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-01.52.18:395][314]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1.16ms to complete.
+[2025.01.27-01.52.18:929][318]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2025.01.27-01.52.18:938][318]LogStreaming: Display: FlushAsyncLoading(1193): 1 QueuedPackages, 0 AsyncPackages
+[2025.01.27-01.52.18:957][318]LogChaosDD: Creating Chaos Debug Draw Scene for world End_Level
+[2025.01.27-01.52.18:959][318]LogAssetEditorSubsystem: Opening Asset editor for World /Game/UI/Levels/End_Level.End_Level
+[2025.01.27-01.52.18:959][318]Cmd: MAP LOAD FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Levels/End_Level.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.01.27-01.52.18:969][318]LogWorld: UWorld::CleanupWorld for Game_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.52.18:969][318]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.52.18:969][318]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/UI/Levels/Game_Level.Game_Level
+[2025.01.27-01.52.19:004][318]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.27-01.52.19:009][318]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
+[2025.01.27-01.52.19:012][318]LogWorld: UWorld::CleanupWorld for End_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.52.19:012][318]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.52.19:039][318]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2025.01.27-01.52.19:190][318]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2025.01.27-01.52.19:212][318]LogAudio: Display: Audio Device (ID: 1) registered with world 'End_Level'.
+[2025.01.27-01.52.19:212][318]LogChaosDD: Creating Chaos Debug Draw Scene for world End_Level
+[2025.01.27-01.52.19:237][318]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.01.27-01.52.19:265][318]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2025.01.27-01.52.19:278][318]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.01.27-01.52.19:278][318]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.061ms to complete.
+[2025.01.27-01.52.25:810][458]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Widgets/End_Canvas.End_Canvas
+[2025.01.27-01.52.25:810][458]LogChaosDD: Creating Chaos Debug Draw Scene for world World_6
+[2025.01.27-01.52.25:884][458]LogChaosDD: Creating Chaos Debug Draw Scene for world World_7
+[2025.01.27-01.52.25:898][458]LogSlate: Warning: The command 'UMGEditor.OpenAnimDrawer' has the same default chord as 'EditorViewport.Next' [Ctrl+Shift+Space Bar]
+[2025.01.27-01.52.26:484][458]LogSlateStyle: Warning: Missing Resource from 'CoreStyle' Style: 'Unable to find SlateColor 'Foreground'.'
+[2025.01.27-01.52.26:490][458]LogSlate: Took 0.006057 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2025.01.27-01.53.21:640][785]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 665.467468
+[2025.01.27-01.53.21:824][799]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.01.27-01.53.21:824][799]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 665.638000, Update Interval: 340.198364
+[2025.01.27-01.53.38:119][183]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.01.27-01.53.38:128][183]LogPlayLevel: [PlayLevel] Compiling End_Canvas before play...
+[2025.01.27-01.53.38:204][183]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2025.01.27-01.53.38:208][183]LogPlayLevel: PlayLevel: Blueprint regeneration took 80 ms (1 blueprints)
+[2025.01.27-01.53.38:238][183]LogPlayLevel: Creating play world package: /Game/UI/Levels/UEDPIE_0_End_Level
+[2025.01.27-01.53.38:239][183]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001095s)
+[2025.01.27-01.53.38:239][183]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/UI/Levels/End_Level.End_Level to /Game/UI/Levels/UEDPIE_0_End_Level.End_Level (0.001146s)
+[2025.01.27-01.53.38:262][183]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2025.01.27-01.53.38:263][183]LogChaosDD: Creating Chaos Debug Draw Scene for world End_Level
+[2025.01.27-01.53.38:264][183]LogPlayLevel: PIE: World Init took: (0.001553s)
+[2025.01.27-01.53.38:265][183]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2025.01.27-01.53.38:265][183]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.01.27-01.53.38:265][183]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.01.27-01.53.38:265][183]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.01.27-01.53.38:265][183]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.01.27-01.53.38:265][183]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.01.27-01.53.38:265][183]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.01.27-01.53.38:265][183]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.01.27-01.53.38:265][183]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.01.27-01.53.38:265][183]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.01.27-01.53.38:265][183]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.01.27-01.53.38:265][183]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.01.27-01.53.38:268][183]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.01.27-01.53.38:314][183]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2025.01.27-01.53.38:314][183]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.01.27-01.53.38:314][183]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.01.27-01.53.38:314][183]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.01.27-01.53.38:314][183]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=12
+[2025.01.27-01.53.38:314][183]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=12
+[2025.01.27-01.53.38:318][183]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=12
+[2025.01.27-01.53.38:318][183]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=12
+[2025.01.27-01.53.38:318][183]LogInit: FAudioDevice initialized with ID 12.
+[2025.01.27-01.53.38:318][183]LogAudio: Display: Audio Device (ID: 12) registered with world 'End_Level'.
+[2025.01.27-01.53.38:318][183]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 12
+[2025.01.27-01.53.38:327][183]LogLoad: Game class is 'GameMode'
+[2025.01.27-01.53.38:327][183]LogWorld: Bringing World /Game/UI/Levels/UEDPIE_0_End_Level.End_Level up for play (max tick rate 0) at 2025.01.26-20.53.38
+[2025.01.27-01.53.38:330][183]LogOnline: OSS: Created online subsystem instance for: :Context_19
+[2025.01.27-01.53.38:330][183]LogWorld: Bringing up level for play took: 0.003163
+[2025.01.27-01.53.38:331][183]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.01.27-01.53.38:331][183]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.01.27-01.53.38:331][183]LogPushModel: PushModel HandleCreation is now enabled
+[2025.01.27-01.53.38:331][183]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.01.27-01.53.38:331][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.01.27-01.53.38:332][183]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.01.27-01.53.38:332][183]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.01.27-01.53.38:332][183]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.01.27-01.53.38:332][183]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.01.27-01.53.38:332][183]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_10 IpNetDriver listening on port 17777
+[2025.01.27-01.53.38:332][183]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2025.01.27-01.53.38:332][183]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2025.01.27-01.53.38:332][183]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2025.01.27-01.53.38:333][183]LogBlueprintUserMessages: [End_Canvas_C_0] Server: isVictory is false
+[2025.01.27-01.53.38:333][183]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2025.01.27-01.53.38:334][183]PIE: Server logged in
+[2025.01.27-01.53.38:334][183]PIE: Play in editor total start time 0.207 seconds.
+[2025.01.27-01.53.40:263][362]LogSlate: Window 'End_Canvas' being destroyed
+[2025.01.27-01.53.40:279][362]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.53.40:279][362]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.53.40:288][362]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.53.40:288][362]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.53.40:342][362]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2025.01.27-01.53.48:830][ 48]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.27-01.53.48:830][ 48]LogWorld: BeginTearingDown for /Game/UI/Levels/UEDPIE_0_End_Level
+[2025.01.27-01.53.48:830][ 48]LogWorld: UWorld::CleanupWorld for End_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.53.48:830][ 48]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.53.48:921][ 48]LogNet: World NetDriver shutdown IpNetDriver_10 [GameNetDriver]
+[2025.01.27-01.53.48:921][ 48]LogNet: DestroyNamedNetDriver IpNetDriver_10 [GameNetDriver]
+[2025.01.27-01.53.48:922][ 48]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_10 shut down
+[2025.01.27-01.53.48:924][ 48]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.01.27-01.53.48:931][ 48]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.53.48:949][ 48]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.27-01.53.48:949][ 48]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 12
+[2025.01.27-01.53.48:949][ 48]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2025.01.27-01.53.48:952][ 48]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2025.01.27-01.53.48:961][ 48]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2025.01.27-01.53.48:984][ 49]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2025.01.27-01.53.50:452][ 75]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.01.27-01.53.50:462][ 75]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.01.27-01.53.50:462][ 75]LogPlayLevel: Creating play world package: /Game/UI/Levels/UEDPIE_0_End_Level
+[2025.01.27-01.53.50:463][ 75]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000883s)
+[2025.01.27-01.53.50:463][ 75]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/UI/Levels/End_Level.End_Level to /Game/UI/Levels/UEDPIE_0_End_Level.End_Level (0.000919s)
+[2025.01.27-01.53.50:483][ 75]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2025.01.27-01.53.50:485][ 75]LogChaosDD: Creating Chaos Debug Draw Scene for world End_Level
+[2025.01.27-01.53.50:486][ 75]LogPlayLevel: PIE: World Init took: (0.001609s)
+[2025.01.27-01.53.50:487][ 75]LogAudio: Display: Creating Audio Device:                 Id: 13, Scope: Unique, Realtime: True
+[2025.01.27-01.53.50:487][ 75]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.01.27-01.53.50:487][ 75]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.01.27-01.53.50:487][ 75]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.01.27-01.53.50:487][ 75]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.01.27-01.53.50:487][ 75]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.01.27-01.53.50:487][ 75]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.01.27-01.53.50:487][ 75]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.01.27-01.53.50:487][ 75]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.01.27-01.53.50:487][ 75]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.01.27-01.53.50:487][ 75]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.01.27-01.53.50:487][ 75]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.01.27-01.53.50:489][ 75]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.01.27-01.53.50:531][ 75]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2025.01.27-01.53.50:531][ 75]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.01.27-01.53.50:531][ 75]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.01.27-01.53.50:531][ 75]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.01.27-01.53.50:531][ 75]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=13
+[2025.01.27-01.53.50:531][ 75]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=13
+[2025.01.27-01.53.50:535][ 75]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=13
+[2025.01.27-01.53.50:535][ 75]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=13
+[2025.01.27-01.53.50:535][ 75]LogInit: FAudioDevice initialized with ID 13.
+[2025.01.27-01.53.50:535][ 75]LogAudio: Display: Audio Device (ID: 13) registered with world 'End_Level'.
+[2025.01.27-01.53.50:535][ 75]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 13
+[2025.01.27-01.53.50:561][ 75]LogLoad: Game class is 'GameMode'
+[2025.01.27-01.53.50:561][ 75]LogWorld: Bringing World /Game/UI/Levels/UEDPIE_0_End_Level.End_Level up for play (max tick rate 0) at 2025.01.26-20.53.50
+[2025.01.27-01.53.50:564][ 75]LogOnline: OSS: Created online subsystem instance for: :Context_20
+[2025.01.27-01.53.50:564][ 75]LogWorld: Bringing up level for play took: 0.002946
+[2025.01.27-01.53.50:565][ 75]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.01.27-01.53.50:565][ 75]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.01.27-01.53.50:565][ 75]LogPushModel: PushModel HandleCreation is now enabled
+[2025.01.27-01.53.50:565][ 75]LogNet: InitBase GameNetDriver (NetDriverDefinition GameNetDriver) using replication model Generic
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumConnections
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Connections
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric GatherPrioritizeTimeMS
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientAvg
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsClientMax
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfActiveActors
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumberOfFullyDormantActors
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumClientUpdateLevelVisibility
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumOpenChannels
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumReplicateActorCallsPerConAvg
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumSkippedObjectEmptyUpdates
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric NumTickingChannels
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutKBytes
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutNetGUIDKBytesSec
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientAvg
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsClientMax
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ReplicateActorTimeMS
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SatConnections
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric ServerReplicateActorTimeMS
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyHit
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationPropertyMiss
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCHit
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric SharedSerializationRPCMiss
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutgoingReliableMessageQueueMaxSize
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric IncomingReliableMessageQueueMaxSize
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsPerFrame
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsPerFrame
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InLostPacketsFoundPerFrame
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutLostPacketsFoundPerFrame
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric Ping
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InRate
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutRate
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric AverageJitterInMS
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric InPacketsLost
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsCSV_Replication for metric OutPacketsLost
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumConnections
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AvgPing
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InBunches
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPackets
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondAvg
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMax
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsClientPerSecondMin
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InPacketsLost
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRate
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientAvg
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMax
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric InRateClientMin
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPacketOverhead
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MaxPing
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric MinPing
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric NumClients
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric Connections
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutBunches
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPackets
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondAvg
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMax
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsClientPerSecondMin
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutPacketsLost
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRate
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientAvg
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMax
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric OutRateClientMin
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt0
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt1
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt2
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt3
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt4
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt5
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt6
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric PingBucketInt7
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric ClosedConnectionsDueToReliableBufferOverflow
+[2025.01.27-01.53.50:565][ 75]LogNet: Registering network metrics listener /Script/Engine.NetworkMetricsPerfCounters for metric AddedConnections
+[2025.01.27-01.53.50:565][ 75]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.01.27-01.53.50:565][ 75]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.01.27-01.53.50:565][ 75]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.01.27-01.53.50:565][ 75]LogNet: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11 IpNetDriver listening on port 17777
+[2025.01.27-01.53.50:565][ 75]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2025.01.27-01.53.50:565][ 75]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2025.01.27-01.53.50:565][ 75]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2025.01.27-01.53.50:566][ 75]LogBlueprintUserMessages: [End_Canvas_C_0] Server: isVictory is false
+[2025.01.27-01.53.50:566][ 75]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2025.01.27-01.53.50:567][ 75]PIE: Server logged in
+[2025.01.27-01.53.50:568][ 75]PIE: Play in editor total start time 0.106 seconds.
+[2025.01.27-01.54.22:732][661]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.27-01.54.22:732][661]LogWorld: BeginTearingDown for /Game/UI/Levels/UEDPIE_0_End_Level
+[2025.01.27-01.54.22:732][661]LogWorld: UWorld::CleanupWorld for End_Level, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.54.22:732][661]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.54.22:737][661]LogNet: World NetDriver shutdown IpNetDriver_11 [GameNetDriver]
+[2025.01.27-01.54.22:737][661]LogNet: DestroyNamedNetDriver IpNetDriver_11 [GameNetDriver]
+[2025.01.27-01.54.22:737][661]LogExit: Name:GameNetDriver Def:GameNetDriver IpNetDriver_11 shut down
+[2025.01.27-01.54.22:740][661]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.01.27-01.54.22:745][661]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.54.22:766][661]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.27-01.54.22:766][661]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 13
+[2025.01.27-01.54.22:766][661]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13
+[2025.01.27-01.54.22:769][661]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13
+[2025.01.27-01.54.22:778][661]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2025.01.27-01.54.22:815][662]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2025.01.27-01.54.31:538][523]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 18416062798730459828
+[2025.01.27-01.54.31:538][523]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2025.01.27-01.54.31:539][523]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.54.35:292][948]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Widgets/Game_Canvas.Game_Canvas
+[2025.01.27-01.54.35:292][948]LogChaosDD: Creating Chaos Debug Draw Scene for world World_8
+[2025.01.27-01.54.35:300][948]LogChaosDD: Creating Chaos Debug Draw Scene for world World_9
+[2025.01.27-01.54.41:908][629]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Widgets/End_Canvas.End_Canvas
+[2025.01.27-01.54.41:908][629]LogChaosDD: Creating Chaos Debug Draw Scene for world World_10
+[2025.01.27-01.54.41:915][629]LogChaosDD: Creating Chaos Debug Draw Scene for world World_11
+[2025.01.27-01.54.53:472][492]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2025.01.27-01.54.54:561][565]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.27-01.54.54:663][565]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/UI/Widgets/End_Canvas] ([2] browsable assets)...
+[2025.01.27-01.54.54:668][565]OBJ SavePackage:     Rendered thumbnail for [WidgetBlueprint /Game/UI/Widgets/End_Canvas.End_Canvas]
+[2025.01.27-01.54.54:668][565]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/Widgets/End_Canvas]
+[2025.01.27-01.54.54:668][565]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/Widgets/End_Canvas" FILE="../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Widgets/End_Canvas.uasset" SILENT=true
+[2025.01.27-01.54.54:674][565]LogSavePackage: Moving output files for package: /Game/UI/Widgets/End_Canvas
+[2025.01.27-01.54.54:674][565]LogSavePackage: Moving '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Saved/End_CanvasFAFDD194478082426CA899873BE3571F.tmp' to '../../../../../../Users/sgryg/Documents/GitHub/GGJ_2025/GGJ/Content/UI/Widgets/End_Canvas.uasset'
+[2025.01.27-01.54.54:687][565]LogFileHelpers: InternalPromptForCheckoutAndSave took 125.112 ms (total: 456.090 ms)
+[2025.01.27-01.54.54:828][565]LogContentValidation: Display: Starting to validate 1 assets
+[2025.01.27-01.54.54:828][565]LogContentValidation: Enabled validators:
+[2025.01.27-01.54.54:828][565]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.01.27-01.54.54:828][565]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.01.27-01.54.54:828][565]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.01.27-01.54.54:828][565]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.01.27-01.54.54:828][565]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.01.27-01.54.54:828][565]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.01.27-01.54.54:829][565]AssetCheck: /Game/UI/Widgets/End_Canvas Validating asset
+[2025.01.27-01.55.03:452][785]LogSlate: Window 'End_Canvas' being destroyed
+[2025.01.27-01.55.03:493][785]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.55.03:494][785]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.55.03:503][785]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2025.01.27-01.55.03:503][785]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.27-01.55.03:561][785]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2025.01.27-01.55.05:340][936]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
